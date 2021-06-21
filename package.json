@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/adamjoulak/testing-with-jest#readme",
   "dependencies": {
+    "geckodriver": "^2.0.0",
+    "selenium-webdriver": "^4.0.0-beta.4",
     "underscore": "^1.13.1"
   },
   "devDependencies": {
