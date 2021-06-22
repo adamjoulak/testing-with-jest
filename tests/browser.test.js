@@ -32,3 +32,19 @@ describe('Clicking "Pusha till stacken"', () => {
 		await alert.accept();
 	});
 });
+
+describe("Pop button", () => {
+  it('Should make sure that element is a text and not integer', async () => {
+    let push = await driver.findElement(By.id("push"));
+    await push.click();
+    let alert = await driver.switchTo().alert();
+    await alert.sendKeys(1);
+    await alert.accept();
+    let peek = await driver.findElement(By.id("peek"));
+    peek.click();
+    let peeked_value = await driver.findElement(By.id("top_of_stack")).getText();
+    expect(peeked_value).toBeDefined();
+    expect(peeked_value).toEqual("1");
+
+  });
+});
