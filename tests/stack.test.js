@@ -29,5 +29,5 @@ test('peek on stack should return the second to last item after last item has be
     expect(stack.peek()).toBe("not 4");
     stack.pop();
     expect(stack.peek()).toBeDefined();
-    expect(stack.peek()).toBe("not 4");
+    expect(stack.peek()).toBe("the second to last item muddafokka");
 });

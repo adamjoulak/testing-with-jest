@@ -38,7 +38,7 @@ describe("Pop button", () => {
     let push = await driver.findElement(By.id("push"));
     await push.click();
     let alert = await driver.switchTo().alert();
-    await alert.sendKeys(1);
+    await alert.sendKeys("1");
     await alert.accept();
     let peek = await driver.findElement(By.id("peek"));
     peek.click();
